@@ -1,7 +1,8 @@
 <template lang="pug">
  #app
   img(src='https://mikef123.github.io/vuemusic/dist/logo.png')
-  h1 VueMusic
+  h1 VueMusicc
+  p Selecciona un valor de la lista para obtener los artistas más representativos de ese país:
   select(v-model="selectedCountry")
           option(v-for="countrie in countries" :value="countrie.value") {{countrie.name}}
   spinner(v-show="loading")
